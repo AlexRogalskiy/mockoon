@@ -1,0 +1,57 @@
+{
+  "name": "mockoon-com",
+  "version": "1.10.0",
+  "description": "Mockoon app website repository",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "start": "next start",
+    "deploy": "npm run export && firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
+  },
+  "author": {
+    "name": "Guillaume Monnet",
+    "email": "hi@255kb.dev",
+    "url": "https://255kb.dev/"
+  },
+  "homepage": "https://mockoon.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mockoon/mockoon.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mockoon/mockoon.com/issues"
+  },
+  "license": "MIT",
+  "prettier": {
+    "jsxSingleQuote": true,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "gray-matter": "^4.0.2",
+    "material-design-icons": "^3.0.1",
+    "next": "^9.5.2",
+    "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "sass": "^1.26.10",
+    "semver": "^7.3.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.47",
+    "@types/semver": "^7.3.3",
+    "@types/webpack": "^4.41.21",
+    "@types/webpack-env": "^1.15.2",
+    "cross-env": "^7.0.2",
+    "firebase-tools": "^8.9.0",
+    "prettier": "^2.1.1",
+    "typescript": "^3.8.3"
+  }
+}
